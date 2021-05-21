@@ -26,11 +26,3 @@ func TestNQueen(t *testing.T) {
 
 	fmt.Println(len(res))
 }
-
-func TestCanPartitionKSubSet(t *testing.T) {
-	fmt.Println(CanPartitionKSubSet([]int{1, 1, 2, 2, 3, 3, 1, 2, 3}, 6))
-}
-
-func TestCanPartitionKSubSetFromBucket(t *testing.T) {
-	fmt.Println(CanPartitionKSubSetFromBucket([]int{1, 1, 2, 2, 3, 3, 1, 2, 3}, 6))
-}

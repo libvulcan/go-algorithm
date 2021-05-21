@@ -1,6 +1,7 @@
 // Package back_track
 // CanPartitionKSubSet 数组是否能划分为K个元素和相同子集（从数字的视角）
 // CanPartitionKSubSetFromBucket 数组是否能划分为K个元素和相同子集（从桶/子集的视角）
+// AllSubsets 求一组没有重复元素的数组的所有子排列
 package back_track
 
 // CanPartitionKSubSet 数组是否能划分为K个元素和相同子集
@@ -56,7 +57,7 @@ func CanPartitionKSubSetFromBucket(nums []int, K int) bool {
 	for _, v := range nums {
 		total += v
 	}
-	if total % K != 0 {
+	if total%K != 0 {
 		return false
 	}
 
@@ -85,7 +86,7 @@ func BackTrackWithBucket(K, bucket int, nums []int, used []bool, curr, totalPerS
 		}
 
 		// 当前桶剩余量装不下nums[i]了
-		if nums[i] + bucket > totalPerSet {
+		if nums[i]+bucket > totalPerSet {
 			continue
 		}
 
@@ -104,4 +105,29 @@ func BackTrackWithBucket(K, bucket int, nums []int, used []bool, curr, totalPerS
 	}
 
 	return false
+}
+
+// AllSubsets 求一组没有重复元素的数组的所有子排列
+func AllSubsets(nums []int) [][]int {
+	var res [][]int
+	var track []int
+
+	// 回溯
+	AllSubsetsBackTrack(&res, nums, track, 0)
+
+	// 返回所有子排列
+	return res
+}
+
+func AllSubsetsBackTrack(res *[][]int, nums, track []int, curr int) {
+	*res = append(*res, append([]int{}, track...))
+
+	for i := curr; i < len(nums); i++ {
+		// 选择
+		track = append(track, nums[i])
+		// 回溯
+		AllSubsetsBackTrack(res, nums, track, i+1)
+		// 撤销nums[i]
+		track = track[:len(track)-1]
+	}
 }
