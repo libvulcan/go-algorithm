@@ -1,6 +1,6 @@
 // Package linked_list
 // Node.HasCycle 判断链表中是否有环
-// Node.GetCycle 获取环的初始位置
+// Node.GetCycle 获取环的起始位置
 package linked_list
 
 // HasCycle 判断链表中是否有环
@@ -18,7 +18,7 @@ func (head *Node) HasCycle() bool {
     return false
 }
 
-// GetCycle 获取环的初始位置
+// GetCycle 获取环的起始位置
 func (head *Node) GetCycle() *Node {
     fast, slow := head, head
     for fast != nil && fast.next != nil {

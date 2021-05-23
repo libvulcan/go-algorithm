@@ -1,4 +1,4 @@
-// Package go_algorithm
+// Package prefix_sum
 // SubArraySum 求数组中一共有多少个和为K的子数组
 // SubArraySumBetter 优化解法
 package prefix_sum
