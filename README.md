@@ -1,5 +1,5 @@
 # go-algorithm
-算法Go语言实现
+基于Go语言的算法实现 algorithm go implement
 
 ![[env]](https://img.shields.io/badge/env-darwin-inactive?style=for-the-badge&logo=appveyor) ![go1.14](https://img.shields.io/badge/language-Go1.14-blue?style=for-the-badge&logo=appveyor) ![license MIT](https://img.shields.io/badge/license-MIT-success?style=for-the-badge&logo=appveyor)
 
