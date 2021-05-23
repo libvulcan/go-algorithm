@@ -52,9 +52,19 @@
   - [x] [最小覆盖子串](https://github.com/libvulcan/go-algorithm/blob/main/sliding_window/min_window_substring.go)
   - [x] [字符串排列(子串)](https://github.com/libvulcan/go-algorithm/blob/main/sliding_window/permutation_string.go)
   
+- [ ] [负载均衡算法](https://github.com/libvulcan/go-algorithm/tree/main/load_balance)
+  - [x] 轮询
+  - [x] 随机
+  - [x] IP Hash
+  - [x] 加权轮询
+  - [x] 平滑加权轮询
+  - [ ] ...
+  
+- [ ] 限流算法
+
 - [ ] 二叉树操作
 
 - [ ] 动态规划
 
-...
+- [ ] ...
 
