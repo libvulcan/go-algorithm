@@ -60,16 +60,17 @@
   - [x] 平滑加权轮询
   - [ ] ...
 
-- [ ] 排序
-  - [x] 冒泡排序
-  - [x] 选择排序
-  - [x] 归并排序
-  - [x] 插入排序
-  - [x] 希尔排序
-  - [ ] 堆排序
-  - [ ] 计数排序
-  - [ ] 基数排序
-  - [ ] 桶排序
+- [x] 排序
+  - [x] [冒泡排序](https://github.com/libvulcan/go-algorithm/blob/main/sort/bubble_sort.go)
+  - [x] [选择排序](https://github.com/libvulcan/go-algorithm/blob/main/sort/selection_sort.go)
+  - [x] [归并排序](https://github.com/libvulcan/go-algorithm/blob/main/sort/merge_sort.go)
+  - [x] [插入排序](https://github.com/libvulcan/go-algorithm/blob/main/sort/insertion_sort.go)
+  - [x] [希尔排序](https://github.com/libvulcan/go-algorithm/blob/main/sort/shell_sort.go)
+  - [x] [快速排序](https://github.com/libvulcan/go-algorithm/blob/main/sort/quick_sort.go)
+  - [x] [堆排序](https://github.com/libvulcan/go-algorithm/blob/main/sort/heap_sort.go)
+  - [x] [计数排序](https://github.com/libvulcan/go-algorithm/blob/main/sort/count_sort.go)
+  - [x] [基数排序](https://github.com/libvulcan/go-algorithm/blob/main/sort/radix_sort.go)
+  - [x] [桶排序](https://github.com/libvulcan/go-algorithm/blob/main/sort/bucket_sort.go)
 
 - [ ] 限流算法
 
