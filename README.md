@@ -53,7 +53,7 @@
   - [x] [字符串排列(子串)](https://github.com/libvulcan/go-algorithm/blob/main/sliding_window/permutation_string.go)
   
 - [ ] [负载均衡算法](https://github.com/libvulcan/go-algorithm/tree/main/load_balance)
-  - [x] 轮询
+  - [x] [轮询](https://github.com/libvulcan/go-algorithm/blob/main/load_balance/static_lb_round_robin.go)
   - [x] 随机
   - [x] IP Hash
   - [x] 加权轮询
